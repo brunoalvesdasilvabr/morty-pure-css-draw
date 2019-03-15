@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  body{
+    background-color:lightgreen;
+    }
+  .container{
+    margin:6rem auto;
+    width:20rem;
+  }
+  .head{ 
+    background-color:#fad0aa;
+    border:1px solid black;
+    width:20rem;
+    height:310px;
+    border-radius:47% 47% 45% 45%;
+    position:relative;
+  }
+  .head::after{
+    z-index:-999;
+    content:"";
+    box-shadow: 200px 200px 400px 250px black ;
+    border-radius:50%;
+    position:absolute;
+    top:-40px;
+    left:-40px;
+  }
+  
+  .head .hair{
+    z-index:-1;
+    background-color:#824a18;
+    border:1px solid black;
+    border-bottom:none;
+    padding: 8rem 11rem;
+    border-radius:50% 50% 100px 110px;
+    position:absolute;
+    top:-40px;
+    right:-15px;
+      
+  }
+  
+  .head .Eye{
+    background-color:white;
+    padding:3.5rem;
+    border: 1px solid black;
+    border-radius:50%;
+    position:absolute;
+  }
+  
+  .head .left{
+     top:4rem;
+    left:1rem;
+    animation: tremeLeft .1s 2s infinite;
+  }
+  
+  .head .right{
+    top:4rem;
+    right:1rem; 
+    animation: tremeRight .1s 2s infinite; 
+  }
+  
+  @keyframes tremeRight {
+    0% {right: 1rem; }
+    10% {right: 1.5rem;}
+  
+  }
+  @keyframes tremeLeft {
+    0% {left: 1rem;}
+    10% {left: 1.5rem;}
+  
+  }
+  
+  .head .pupila{
+    border: 6px solid black;
+    border-radius:50%;
+  }
+  
+  .head .Ear{
+    z-index:-1;
+    border:1px solid black;
+    padding: 1.5rem 1.5rem;
+    position:absolute;
+      border-radius:20px 50%  50% 20px;
+      background-color:#fad0aa;
+  }
+  
+  .head .leftEar{
+     top:10rem;
+    left:-1rem;
+    transform:rotateY(180deg) rotate(5deg);
+  }
+  
+  .head .rightEar{
+    top:10rem;
+    right:-1rem;
+  }
+  .nose{
+    border:1px solid black;
+    border-top:none;
+    padding:.8rem .7rem;
+    position:absolute;
+    bottom:7rem;
+    right:9rem;
+    border-radius:0 0 50% 50%;
+    transform:rotate(-50deg)
+  }
+  
+  .mouth{
+    border: 1px solid black;
+    padding:0rem 2rem;
+    position: absolute;
+    top:15rem;
+    right:8rem;
+    border-radius:130px 130px 25px 25px;;
+    background-color:#660001;
+    animation:openMouth 4s 2s 1;
+    animation-fill-mode:forwards;
+  }
+  
+  @keyframes openMouth{
+    0%{
+      padding:0rem 2rem;
+    }
+     30%, 100%{
+      padding:1rem 2rem;
+    }
+  
+  }
